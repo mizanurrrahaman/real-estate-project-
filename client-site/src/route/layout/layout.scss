@@ -1,0 +1,27 @@
+@import "../../responcive.scss";
+
+.layout{
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+
+    @include lg{
+       // background-color:rgba(122, 122, 122, 0.158);
+        max-width: 1280px;
+    }
+    @include md{
+       // background-color:rgba(126, 124, 117, 0.178);
+        max-width: 768px;
+    }
+    @include sm{
+       // background-color: rgba(221, 200, 200, 0.486);
+        max-width: 640px;
+    }
+    .content{
+       // flex: 1;
+       height: calc(100vh - 100px);
+    }
+}

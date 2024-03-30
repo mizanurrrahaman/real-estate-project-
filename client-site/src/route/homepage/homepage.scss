@@ -1,0 +1,67 @@
+@import "../../responcive.scss";
+
+.homePage{
+    display: flex;
+    height: 100%;
+    .textcontainer{
+        flex: 3;
+        .wrapper{
+            padding-right: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            height: 100%;
+            @include md{
+                padding: 0;
+            }
+            @include md{
+                justify-content: flex-start;
+            }
+            .title{
+                padding-top: 60px;
+                font-size: 40px;
+                @include lg{
+                    font-size: 48px;
+                }
+            }
+            .boxes{
+                display: flex;
+                justify-content: space-between;
+                @include sm{
+                    display: none;
+                }
+            }
+            h1{
+                font-size: 30px;
+                @include lg{
+                    font-size: 25px;
+                }
+            }
+            h2{
+                font-size: 20px;
+                font-weight: 400px;
+            }
+        }
+    }
+    
+    .imgcontainer{
+        flex: 2;
+        background-color: #fcf5f3;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        @include md{
+          display: none;
+        }
+        img{
+            width: 115%;
+            position: absolute;
+            right: 0;
+        }
+        @include lg{
+            width: 105%;
+        }
+    }
+}
